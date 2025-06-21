@@ -1,0 +1,56 @@
+2025-02-20 22:50:38,777 - INFO - Database connection established successfully.
+2025-02-20 22:50:44,222 - INFO - Database connection established successfully.
+2025-02-20 22:50:44,229 - INFO - Initializing chat session with Gemini
+2025-02-20 22:50:44,230 - INFO - Sending user query to Gemini
+2025-02-20 22:50:46,620 - INFO - Received response from Gemini: Hello! How can I help you today?
+
+2025-02-20 22:50:46,621 - INFO - Non-SQL response detected
+2025-02-20 22:51:10,270 - INFO - Database connection established successfully.
+2025-02-20 22:51:10,282 - INFO - Initializing chat session with Gemini
+2025-02-20 22:51:10,284 - INFO - Sending user query to Gemini
+2025-02-20 22:51:11,584 - INFO - Received response from Gemini: ```sql
+SELECT SUM(commission) FROM bookings_info WHERE date(check_out) <= '2024-12-31';
+```
+2025-02-20 22:51:11,586 - INFO - SQL query detected in response
+2025-02-20 22:51:11,620 - INFO - QUERY GENERATED->SELECT SUM(commission) FROM bookings_info WHERE date(check_out) <= '2024-12-31';
+2025-02-20 22:51:12,922 - INFO - Formatted response received from Gemini
+2025-02-20 22:51:22,852 - INFO - Doing Database Configuration...
+2025-02-20 22:51:22,854 - INFO - Database Configuration Done
+2025-02-20 22:51:22,855 - INFO - Doing Gemini Configuration...
+2025-02-20 22:51:22,861 - INFO - Gemini Key founded !!
+2025-02-20 22:51:22,889 - INFO - Establishing chromadb persistant client...
+2025-02-20 22:51:23,067 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-02-20 22:51:24,267 - INFO - Established chromadb persistant client
+2025-02-20 22:52:39,202 - INFO - Doing Database Configuration...
+2025-02-20 22:52:39,204 - INFO - Database Configuration Done
+2025-02-20 22:52:39,205 - INFO - Doing Gemini Configuration...
+2025-02-20 22:52:39,207 - INFO - Gemini Key founded !!
+2025-02-20 22:52:39,211 - INFO - Establishing chromadb persistant client...
+2025-02-20 22:52:39,223 - INFO - Established chromadb persistant client
+2025-02-20 22:52:39,236 - INFO - Inside the validate_collection_id funtion
+2025-02-20 22:52:39,257 - INFO - Property ID is valid!!
+2025-02-20 22:52:39,259 - INFO - 883 given to pid session variable
+2025-02-20 22:52:39,263 - INFO - Inside the External API Calling function
+2025-02-20 22:52:41,142 - INFO - HTTP Request: POST https://shark-app-6wiyn.ondigitalocean.app/api/v1/auth/login "HTTP/1.1 201 Created"
+2025-02-20 22:52:41,145 - INFO - Response statuse code is 201 !!
+2025-02-20 22:52:41,173 - INFO - Inserting Value to session Table
+2025-02-20 22:52:41,237 - INFO - Inserted Value is commited to session Table
+2025-02-20 22:52:41,241 - INFO - user_id, user_role, session_id retrived from login_user
+2025-02-20 22:52:41,243 - INFO - 883  given to session_id session variable
+2025-02-20 22:52:41,244 - INFO -  logged_in session variable set to true
+2025-02-20 22:52:49,722 - INFO - Doing Database Configuration...
+2025-02-20 22:52:49,723 - INFO - Database Configuration Done
+2025-02-20 22:52:49,725 - INFO - Doing Gemini Configuration...
+2025-02-20 22:52:49,727 - INFO - Gemini Key founded !!
+2025-02-20 22:52:49,729 - INFO - Establishing chromadb persistant client...
+2025-02-20 22:52:49,737 - INFO - Established chromadb persistant client
+2025-02-20 22:52:49,740 - INFO - User entered Property name
+2025-02-20 22:52:49,741 - INFO - Inside the retrieve_chunks function
+2025-02-20 22:52:49,742 - INFO - Retrieving Collection id..
+2025-02-20 22:52:49,745 - INFO - Retrieving top 5 text from collection with Collection id 883 ..
+2025-02-20 22:52:53,271 - INFO - da3858e7-57b0-4ac7-8bd2-9f932b93fc86 is getting searched in Session_Table  
+2025-02-20 22:52:53,289 - INFO - da3858e7-57b0-4ac7-8bd2-9f932b93fc86 is getting searched in Chat Table..  
+2025-02-20 22:52:53,330 - INFO - da3858e7-57b0-4ac7-8bd2-9f932b93fc86User with,not found
+2025-02-20 22:52:53,334 - INFO - Time based enteries are happening in session table
+2025-02-20 22:52:53,386 - INFO - First time visit of user thus adding to session table.
+2025-02-20 22:52:53,388 - INFO - All entries done in Chat and session table
