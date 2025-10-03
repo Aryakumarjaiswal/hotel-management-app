@@ -97,7 +97,7 @@ system_instruction = """
 # Register the function with the model
 model = genai.GenerativeModel(
 
-    model_name="models/gemini-1.5-pro",
+    model_name="models/gemini-2.5-pro",
     generation_config=generation_config,
     tools=[transfer_to_customer_service],  # Register the transfer function
     system_instruction=system_instruction,)
@@ -352,3 +352,4 @@ def register_main():
 
 
 register_main()
+
