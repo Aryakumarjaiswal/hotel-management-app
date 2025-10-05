@@ -106,7 +106,7 @@ chat = model.start_chat()
 async def login_user(email, password):
     try:
         logging.info("Inside the External API Calling function")
-        API_BASE_URL = "https://shark-app-6wiyn.ondigitalocean.app/api"
+        API_BASE_URL = "https://shark-app-6wiyn.ondigitalocean.app/api"      #See Hotel-management-creds sheet
         login_url = f"{API_BASE_URL}/v1/auth/login"
         async with httpx.AsyncClient() as client:
             response = await client.post(
@@ -352,4 +352,5 @@ def register_main():
 
 
 register_main()
+
 
